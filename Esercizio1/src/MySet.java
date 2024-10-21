@@ -39,7 +39,7 @@ public class MySet {
                     index++;
                 }
             }
-            currentSize--;
+            currentSize--; //Set non ha duplicati
         }
 
     }
