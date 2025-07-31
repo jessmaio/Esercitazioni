@@ -1,4 +1,6 @@
-public class Main {
+package es1.Esercizio1.src;
+
+public class Main1b {
     public static void main(String[] args) {
 
         System.out.println("Hello and welcome!");

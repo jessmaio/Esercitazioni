@@ -1,3 +1,5 @@
+package es1.Esercizio1.src;
+
 public class MySet {
     private int[] elements;
     private int MaxSize;
