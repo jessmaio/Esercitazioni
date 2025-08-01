@@ -2,6 +2,10 @@
 The present code presents the dynamic binding feature.
  */
 
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+
 public class Main3 {
     public static void main(String[] args) {
         System.out.println("Hello world!");
@@ -33,5 +37,14 @@ public class Main3 {
         // STEP 6: let's check Dynamic Binding with a different class
         p = yp2;
         p.saluto(); // Thanks to dynamic binding, the p "saluto" implementation changes again
+
+        // STEP 7: Read from File.txt
+        System.out.println("Let's read from a file:");
+        try {
+            po.readFromFile("es3/family.txt");
+        } catch (Exception e) {
+            throw new RuntimeException("Error reading from file: " + e);
+        }
     }
+
 }
