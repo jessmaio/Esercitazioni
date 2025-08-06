@@ -7,13 +7,13 @@ public class OldPerson extends Person{
 
     int age = 50;
 
-    public OldPerson(String nome, String cognome, int eta){
+    public OldPerson(String nome, String cognome, int eta) throws ExtremelyOldException {
         super(nome,cognome);
         if(eta < 50){
             throw new RuntimeException("The person is not old :D ");
         }
         if(eta > 200){
-            throw new RuntimeException("The person is too old :D ");
+            throw new ExtremelyOldException();
         }
         this.age = eta;
     }
