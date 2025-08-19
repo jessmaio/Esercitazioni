@@ -1,4 +1,4 @@
-/*
+package es3;/*
 The present code presents the dynamic binding feature.
  */
 
